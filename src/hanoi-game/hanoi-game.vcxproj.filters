@@ -26,25 +26,23 @@
     <CopyFileToFolders Include="..\..\lib\SDL2.dll">
       <Filter>Lib</Filter>
     </CopyFileToFolders>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\lib\libjpeg-9.dll">
+    <CopyFileToFolders Include="..\..\lib\libjpeg-9.dll">
       <Filter>Lib</Filter>
-    </None>
-    <None Include="..\..\lib\libpng16-16.dll">
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\lib\libpng16-16.dll">
       <Filter>Lib</Filter>
-    </None>
-    <None Include="..\..\lib\libtiff-5.dll">
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\lib\libtiff-5.dll">
       <Filter>Lib</Filter>
-    </None>
-    <None Include="..\..\lib\libwebp-7.dll">
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\lib\libwebp-7.dll">
       <Filter>Lib</Filter>
-    </None>
-    <None Include="..\..\lib\SDL2_image.dll">
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\lib\SDL2_image.dll">
       <Filter>Lib</Filter>
-    </None>
-    <None Include="..\..\lib\zlib1.dll">
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\lib\zlib1.dll">
       <Filter>Lib</Filter>
-    </None>
+    </CopyFileToFolders>
   </ItemGroup>
 </Project>
