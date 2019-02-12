@@ -84,7 +84,7 @@
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(SolutionPath)\..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -132,6 +132,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.c" />
+    <ClCompile Include="Sprite.c" />
   </ItemGroup>
   <ItemGroup>
     <CopyFileToFolders Include="..\..\lib\SDL2.dll">
@@ -157,6 +158,14 @@
     <CopyFileToFolders Include="..\..\lib\zlib1.dll">
       <FileType>Document</FileType>
     </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="..\..\assets\grey_.png">
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</DeploymentContent>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sprite.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

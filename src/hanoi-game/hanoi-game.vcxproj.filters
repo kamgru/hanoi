@@ -16,9 +16,15 @@
     <Filter Include="Lib">
       <UniqueIdentifier>{7f6c2835-3e39-47cc-b357-043db8d35424}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{dbb4f8d9-4870-40fb-9957-1a33ad8ec9d5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -44,5 +50,13 @@
     <CopyFileToFolders Include="..\..\lib\zlib1.dll">
       <Filter>Lib</Filter>
     </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\assets\grey_.png">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
