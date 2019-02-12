@@ -46,5 +46,9 @@ int main(int argc, char *argv[]) {
 		SDL_RenderPresent(renderer);
 	}
 
+	ASprite_destroy(mySprite);
+	SDL_DestroyTexture(texture);
+	SDL_Quit();
+
 	return 0;
 }
