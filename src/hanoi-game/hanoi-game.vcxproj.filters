@@ -27,6 +27,12 @@
     <ClCompile Include="Sprite.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BasicSprite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SlicedSprite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CopyFileToFolders Include="..\..\lib\SDL2.dll">

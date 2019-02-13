@@ -131,7 +131,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BasicSprite.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="SlicedSprite.c" />
     <ClCompile Include="Sprite.c" />
   </ItemGroup>
   <ItemGroup>
