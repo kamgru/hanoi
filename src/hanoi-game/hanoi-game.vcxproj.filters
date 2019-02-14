@@ -33,6 +33,9 @@
     <ClCompile Include="SlicedSprite.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Core.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CopyFileToFolders Include="..\..\lib\SDL2.dll">
@@ -62,6 +65,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
