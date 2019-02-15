@@ -133,6 +133,7 @@
   <ItemGroup>
     <ClCompile Include="BasicSprite.c" />
     <ClCompile Include="Core.c" />
+    <ClCompile Include="GameObject.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="SlicedSprite.c" />
     <ClCompile Include="Sprite.c" />
@@ -169,6 +170,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core.h" />
+    <ClInclude Include="GameObject.h" />
     <ClInclude Include="Sprite.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
