@@ -5,7 +5,6 @@
 #include "Core.h"
 #include "GameObject.h"
 
-
 const int SCREEN_W = 640;
 const int SCREEN_H = 480;
 
@@ -50,18 +49,15 @@ int main(int argc, char *argv[]) {
 		&(SDL_Rect){.x = 16, .y = 0, .w = 32, .h = 32},
 		SliceInfo_new(4, 28, 4, 28));
 
-
-
-	GameObjectManager_initialize();
-	GameObject* gobj1 = GameObject_create(spr1, NULL);
+	GameObject* gobj1 = GameObject_new(spr1, NULL);
 	gobj1->position = (Vector2){ .x = 20,.y = 50 };
 	gobj1->size = (Vector2) { .x = 100, .y = 32 };
 
-	GameObject* gobj2 = GameObject_create(spr2, NULL);
+	GameObject* gobj2 = GameObject_new(spr2, NULL);
 	gobj2->position = (Vector2) { .x = 50, .y = 10 };
 	gobj2->size = (Vector2) { .x = 16, .y = 42 };
 
-	GameObject* gobj3 = GameObject_create(spr3, NULL);
+	GameObject* gobj3 = GameObject_new(spr3, NULL);
 	gobj3->position = (Vector2) { .x = 400, .y = 350 };
 	gobj3->size = (Vector2) { .x = 64, .y = 64};
 
@@ -75,9 +71,9 @@ int main(int argc, char *argv[]) {
 		SDL_SetRenderDrawColor(renderer, 0x00, 0x00, 0x00, 0x00);
 		SDL_RenderClear(renderer);
 
-		GameObject_draw(GameObject_find(&gobj1->id), renderer);
-		GameObject_draw(GameObject_find(&gobj2->id), renderer);
-		GameObject_draw(GameObject_find(&gobj3->id), renderer);
+		GameObject_draw(gobj1, renderer);
+		GameObject_draw(gobj2, renderer);
+		GameObject_draw(gobj3, renderer);
 
 		SDL_RenderPresent(renderer);
 	}

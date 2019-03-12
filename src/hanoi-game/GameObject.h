@@ -13,8 +13,6 @@ struct GameObject {
 	SDL_Rect collider;
 };
 
-void GameObjectManager_initialize();
-GameObject* GameObject_create(ASprite* sprite, SDL_Rect* collider);
-GameObject* GameObject_find(GameObjectId* gameObjectId);
+GameObject* GameObject_new(ASprite* sprite, SDL_Rect* collider);
 void GameObject_destroy(GameObject* gameObject);
 void GameObject_draw(GameObject* gameObject, SDL_Renderer* renderer);
